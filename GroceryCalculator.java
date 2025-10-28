@@ -15,10 +15,10 @@ public class GroceryCalculator{
 
         while(!item.equalsIgnoreCase("done")){
             System.out.print("Enter quantity for " + item + ": ");
-            int quantity = scan.nextInt();
+            int quantity = Integer.parseInt(scan.nextLine());
 
             System.out.print("Enter the price: R");
-            double price = scan.nextDouble();
+            double price = Double.parseDouble(scan.nextLine());
 
             items.add(item);
             quantities.add(quantity);
